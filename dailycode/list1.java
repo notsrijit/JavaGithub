@@ -86,5 +86,12 @@ public class list1{
        firstprime.add(a, b);
        System.out.println(firstprime);
 
+       // Sort in ascending order
+       Collections.sort(firstprime);
+       System.out.println(firstprime);
+
+       // Sort in descending order
+       Collections.reverse(firstprime);
+       System.out.println(firstprime);
     }
 }
