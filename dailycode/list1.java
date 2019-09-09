@@ -90,6 +90,8 @@ public class list1{
        Collections.sort(firstprime);
        System.out.println(firstprime);
 
+       // For strings, it sorts lexicographically
+
        // Sort in descending order
        Collections.reverse(firstprime);
        System.out.println(firstprime);
