@@ -42,10 +42,10 @@ public class list1{
 
         // Modify content
         System.out.println("Enter the index to be modified with the number...");
-        int n = sc.nextInt();
-        int a = sc.nextInt();
+        int q = sc.nextInt();
+        int p = sc.nextInt();
 
-        firstprime.set(n, a);
+        firstprime.set(q, p);
         System.out.println("Modified:"+firstprime);
 
         // Remove elements by index
@@ -59,6 +59,32 @@ public class list1{
         // Remove elements by all of em.
         firstprime.removeAll(Arrays.asList(11));
         System.out.println("Truncated all of an element:"+firstprime);
+
+        // Clear entire ArrayList
+        firstprime.clear();
+
+        System.out.println("Enter no of elements in list:\t");
+        int n = sc.nextInt();
+        System.out.println("Enter no of elements");
+        for (int i=1; i<=n; i++){
+             firstprime.add(sc.nextInt());
+        }
+
+        // Print as whole
+        System.out.println(firstprime);
+
+        // Print in loop
+        for (int i=0; i<n; i++){
+            System.out.print(firstprime.get(i)+" ");
+       } 
+       System.out.println();
+
+       // Insert an element
+       System.out.println("Enter location and element");
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+       firstprime.add(a, b);
+       System.out.println(firstprime);
 
     }
 }
